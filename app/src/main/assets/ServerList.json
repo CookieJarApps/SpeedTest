@@ -1,0 +1,18 @@
+[
+  {
+    "name":"Main 1 (Frankfurt)",
+    "server":"//34.90.28.158",
+    "dlURL":"backend/garbage.php",
+    "ulURL":"backend/empty.php",
+    "pingURL":"backend/empty.php",
+    "getIpURL":"backend/getIP.php"
+  },
+  {
+    "name":"Main 2 (San Francisco)",
+    "server":"//st2.cookiejarapps.com",
+    "dlURL":"backend/garbage.php",
+    "ulURL":"backend/empty.php",
+    "pingURL":"backend/empty.php",
+    "getIpURL":"backend/getIP.php"
+  }
+]

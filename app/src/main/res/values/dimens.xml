@@ -9,9 +9,9 @@
     <dimen name="gaugeLabel">18dp</dimen>
     <dimen name="gaugeText">36dp</dimen>
     <dimen name="gaugeSize">150dp</dimen>
-    <dimen name="gaugeThickness">10dp</dimen>
-    <dimen name="progressSize">80dp</dimen>
-    <dimen name="ipInfoText">16dp</dimen>
+    <dimen name="gaugeThickness">8dp</dimen>
+    <dimen name="progressSize">100dp</dimen>
+    <dimen name="ipInfoText">10dp</dimen>
     <dimen name="privacyLinks">16dp</dimen>
 
     <dimen name="pingArea_maxWidth">300dp</dimen>

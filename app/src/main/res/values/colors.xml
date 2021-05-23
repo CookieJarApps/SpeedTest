@@ -23,4 +23,5 @@
     <color name="restartButton_background">#00ACC1</color>
     <color name="restartButton_text">#FFFFFF</color>
     <color name="privacyLinks">#808080</color>
+    <color name="black">#000000</color>
 </resources>

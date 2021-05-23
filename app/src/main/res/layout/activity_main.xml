@@ -31,7 +31,7 @@
                 android:layout_width="@dimen/logo_maxWidth"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_medium"
-                android:src="@drawable/logo" />
+                app:srcCompat="@drawable/logo" />
 
         </RelativeLayout>
 
@@ -118,6 +118,7 @@
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/textColor"
                 android:textSize="@dimen/text"
+                android:textStyle="bold"
                 />
 
             <Spinner
@@ -138,7 +139,7 @@
                 android:id="@+id/start"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/serverList"
-                android:background="@color/startButton_background"
+                android:backgroundTint="@color/startButton_background"
                 android:textColor="@color/startButton_text"
                 android:textSize="@dimen/startButton_text"
                 android:paddingLeft="@dimen/startButton_hPadding"
@@ -210,7 +211,7 @@
                     android:layout_height="@dimen/logo_inapp_height"
                     android:id="@+id/logo_inapp"
                     android:layout_marginBottom="@dimen/margin_smallSep"
-                    android:src="@drawable/logo_inapp"
+                    app:srcCompat="@drawable/logo_inapp"
                     />
 
                 <TextView
@@ -504,7 +505,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/restartButton_text"
                         android:id="@+id/restartButton"
-                        android:background="@color/restartButton_background"
+                        android:backgroundTint="@color/restartButton_background"
                         android:textColor="@color/restartButton_text"
                         android:text="@string/test_restart"
                         android:paddingLeft="@dimen/restartButton_hPadding"
@@ -520,7 +521,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/shareButton_text"
                         android:id="@+id/shareButton"
-                        android:background="@color/shareButton_background"
+                        android:backgroundTint="@color/shareButton_background"
                         android:textColor="@color/shareButton_text"
                         android:text="@string/test_share"
                         android:paddingLeft="@dimen/shareButton_hPadding"

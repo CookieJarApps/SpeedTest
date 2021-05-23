@@ -18,6 +18,8 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.cookiejarapps.speedtest.core.Speedtest;
 import com.cookiejarapps.speedtest.core.config.SpeedtestConfig;
 import com.cookiejarapps.speedtest.core.config.TelemetryConfig;
@@ -34,7 +36,7 @@ import java.util.Locale;
 
 import your.name.here.speedtest.R;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

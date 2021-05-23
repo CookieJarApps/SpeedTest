@@ -8,7 +8,15 @@
     "getIpURL":"backend/getIP.php"
   },
   {
-    "name":"Main 2 (San Francisco)",
+    "name":"Main 2 (Paris)",
+    "server":"//51.15.228.176",
+    "dlURL":"backend/garbage.php",
+    "ulURL":"backend/empty.php",
+    "pingURL":"backend/empty.php",
+    "getIpURL":"backend/getIP.php"
+  },
+  {
+    "name":"Main 3 (San Francisco)",
     "server":"//st2.cookiejarapps.com",
     "dlURL":"backend/garbage.php",
     "ulURL":"backend/empty.php",

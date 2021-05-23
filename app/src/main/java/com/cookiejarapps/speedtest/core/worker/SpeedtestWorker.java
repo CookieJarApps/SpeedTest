@@ -11,7 +11,6 @@ import com.cookiejarapps.speedtest.core.getIP.GetIP;
 import com.cookiejarapps.speedtest.core.log.Logger;
 import com.cookiejarapps.speedtest.core.ping.PingStream;
 import com.cookiejarapps.speedtest.core.serverSelector.TestPoint;
-import com.cookiejarapps.speedtest.core.telemetry.Telemetry;
 import com.cookiejarapps.speedtest.core.upload.UploadStream;
 
 import java.util.Locale;
@@ -47,7 +46,6 @@ public abstract class SpeedtestWorker extends Thread{
             onCriticalFailure(t.toString());
         }
         try{
-            sendTelemetry();
         }catch (Throwable t){}
         onEnd();
     }
@@ -232,31 +230,6 @@ public abstract class SpeedtestWorker extends Thread{
         if(stopASAP) return;
         log.l("Ping: "+ ping+" "+jitter+ " (took "+(System.currentTimeMillis()-start)+"ms)");
         onPingJitterUpdate(ping,jitter,1);
-    }
-
-    private void sendTelemetry(){
-        if(telemetryConfig.getTelemetryLevel().equals(TelemetryConfig.LEVEL_DISABLED)) return;
-        if(stopASAP&&telemetryConfig.getTelemetryLevel().equals(TelemetryConfig.LEVEL_BASIC)) return;
-        try{
-            Connection c=new Connection(telemetryConfig.getServer(),-1,-1,-1,-1);
-            Telemetry t=new Telemetry(c,telemetryConfig.getPath(),telemetryConfig.getTelemetryLevel(),ipIsp,config.getTelemetry_extra(),dl==-1?"":String.format(Locale.ENGLISH,"%.2f",dl),ul==-1?"":String.format(Locale.ENGLISH,"%.2f",ul),ping==-1?"":String.format(Locale.ENGLISH,"%.2f",ping),jitter==-1?"":String.format(Locale.ENGLISH,"%.2f",jitter),log.getLog()) {
-                @Override
-                public void onDataReceived(String data) {
-                    if(data.startsWith("id")){
-                        onTestIDReceived(data.split(" ")[1]);
-                    }
-                }
-
-                @Override
-                public void onError(String err) {
-                    System.err.println("Telemetry error: "+err);
-                }
-            };
-            t.join();
-        }catch (Throwable t){
-            System.err.println("Failed to send telemetry: "+t.toString());
-            t.printStackTrace(System.err);
-        }
     }
 
     public void abort(){

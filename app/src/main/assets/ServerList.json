@@ -1,7 +1,7 @@
 [
   {
     "name":"Main 1 (Frankfurt)",
-    "server":"//34.90.28.158",
+    "server":"//speedtest.cookiejarapps.com/",
     "dlURL":"backend/garbage.php",
     "ulURL":"backend/empty.php",
     "pingURL":"backend/empty.php",
@@ -9,7 +9,7 @@
   },
   {
     "name":"Main 2 (Paris)",
-    "server":"//51.15.228.176",
+    "server":"//par1.cookiejarapps.com",
     "dlURL":"backend/garbage.php",
     "ulURL":"backend/empty.php",
     "pingURL":"backend/empty.php",

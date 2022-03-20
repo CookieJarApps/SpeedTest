@@ -17,7 +17,7 @@
     <dimen name="pingArea_maxWidth">300dp</dimen>
     <dimen name="gaugeArea_maxWidth">500dp</dimen>
 
-    <dimen name="logo_maxWidth">400dp</dimen>
+    <dimen name="logo_size">128dp</dimen>
     <dimen name="logo_inapp_height">75dp</dimen>
     <dimen name="loading_size">24dp</dimen>
 

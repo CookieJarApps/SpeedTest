@@ -1,8 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
-        <item name="android:textColor">@color/textColor</item>
+    <style name="AppTheme" parent="@style/Theme.Material3.Light.NoActionBar">
         <item name="android:textSize">@dimen/text</item>
         <item name="android:windowBackground">@color/appBackground</item>
         <item name="textAllCaps">false</item>

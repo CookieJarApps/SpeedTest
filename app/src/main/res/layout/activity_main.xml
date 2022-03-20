@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.cookiejarapps.speedtest.ui.MainActivity"
-    android:background="@color/appBackground">
+    android:background="?attr/colorSurface">
 
     <ImageView
         android:layout_width="match_parent"
@@ -24,14 +24,14 @@
             android:gravity="center"
             android:id="@+id/page_splash"
             android:visibility="invisible"
-            android:background="@color/splashBackground"
             >
 
             <ImageView
-                android:layout_width="@dimen/logo_maxWidth"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/logo_size"
+                android:layout_height="@dimen/logo_size"
                 android:layout_margin="@dimen/margin_medium"
-                app:srcCompat="@drawable/logo" />
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/ic_speedtest" />
 
         </RelativeLayout>
 
@@ -60,7 +60,7 @@
                 android:layout_toEndOf="@id/init_progress"
                 android:id="@+id/init_text"
                 android:layout_centerHorizontal="true"
-                android:textColor="@color/textColor"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="@dimen/text"
                 />
         </RelativeLayout>
@@ -79,7 +79,7 @@
                 android:text="ERROR DESCRIPTION"
                 android:id="@+id/fail_text"
                 android:layout_centerHorizontal="true"
-                android:textColor="@color/textColor"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="@dimen/text"
                 />
 
@@ -116,7 +116,7 @@
                 android:text="@string/serverSelect_message"
                 android:id="@+id/selectServer_message"
                 android:layout_centerHorizontal="true"
-                android:textColor="@color/textColor"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="@dimen/text"
                 android:textStyle="bold"
                 />
@@ -139,7 +139,6 @@
                 android:id="@+id/start"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/serverList"
-                android:backgroundTint="@color/startButton_background"
                 android:textColor="@color/startButton_text"
                 android:textSize="@dimen/startButton_text"
                 android:paddingLeft="@dimen/startButton_hPadding"
@@ -164,13 +163,14 @@
                 android:gravity="center"
                 android:padding="@dimen/margin_smallSep"
                 >
+
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/logo_inapp_height"
                     android:id="@+id/logo_inapp"
+                    android:layout_width="@dimen/logo_inapp_height"
+                    android:layout_height="@dimen/logo_inapp_height"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginBottom="@dimen/margin_smallSep"
-                    app:srcCompat="@drawable/logo_inapp"
-                    />
+                    app:srcCompat="@drawable/ic_speedtest" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -207,7 +207,7 @@
                             android:id="@+id/pingLabel"
                             android:textSize="@dimen/pingJitterLabel"
                             android:gravity="center"
-                            android:textColor="@color/textColor"
+                            android:textColor="?attr/colorOnSurface"
                             />
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -255,7 +255,7 @@
                             android:id="@+id/jitterLabel"
                             android:textSize="@dimen/pingJitterLabel"
                             android:gravity="center"
-                            android:textColor="@color/textColor"
+                            android:textColor="?attr/colorOnSurface"
                             />
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -313,7 +313,7 @@
                             android:id="@+id/dlLabel"
                             android:textSize="@dimen/gaugeLabel"
                             android:layout_centerHorizontal="true"
-                            android:textColor="@color/textColor"
+                            android:textColor="?attr/colorOnSurface"
                             />
 
                         <com.cookiejarapps.speedtest.ui.GaugeView
@@ -381,7 +381,7 @@
                             android:id="@+id/ulLabel"
                             android:textSize="@dimen/gaugeLabel"
                             android:layout_centerHorizontal="true"
-                            android:textColor="@color/textColor"
+                            android:textColor="?attr/colorOnSurface"
                             />
 
                         <com.cookiejarapps.speedtest.ui.GaugeView
@@ -447,7 +447,7 @@
                     android:scrollHorizontally="false"
                     android:textSize="@dimen/ipInfoText"
                     android:gravity="center"
-                    android:textColor="@color/textColor"
+                    android:textColor="?attr/colorOnSurface"
                     />
 
                 <LinearLayout
@@ -463,7 +463,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/restartButton_text"
-                        android:backgroundTint="@color/restartButton_background"
                         android:textColor="@color/restartButton_text"
                         android:text="@string/test_more_info"
                         android:paddingLeft="@dimen/restartButton_hPadding"
@@ -480,7 +479,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/margin_smallSep"
                         android:layout_marginRight="@dimen/margin_smallSep"
-                        android:backgroundTint="@color/restartButton_background"
                         android:paddingLeft="@dimen/restartButton_hPadding"
                         android:paddingTop="@dimen/restartButton_vPadding"
                         android:paddingRight="@dimen/restartButton_hPadding"

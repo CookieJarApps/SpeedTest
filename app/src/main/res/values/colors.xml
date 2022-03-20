@@ -2,7 +2,6 @@
 <resources>
     <color name="splashBackground">#FFFFFF</color>
     <color name="appBackground">#FFFFFF</color>
-    <color name="textColor">#404040</color>
     <color name="loadingColor">#c68b37</color>
     <color name="gaugesBackground">#AACCCCCC</color>
     <color name="progressBackground">#AACCCCCC</color>

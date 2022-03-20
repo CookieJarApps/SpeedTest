@@ -10,7 +10,7 @@
     <string name="init_selecting">Choosing optimal server</string>
     <string name="initFail_noServers">No servers found. Try again later.</string>
     <string name="serverSelect_message">Select a SpeedTest server</string>
-    <string name="start">Start</string>
+    <string name="start">Start test</string>
     <string name="test_dl">Download</string>
     <string name="test_ul">Upload</string>
     <string name="test_speedMeasure">Mbps</string>
@@ -19,8 +19,26 @@
     <string name="test_timeMeasure">ms</string>
     <string name="test_share">Share result</string>
     <string name="test_restart">New test</string>
+    <string name="test_more_info">More info</string>
     <string name="testFail_err">An error occurred</string>
     <string name="testFail_retry">Try again</string>
     <string name="privacy_open"><u>Privacy</u></string>
     <string name="privacy_close"><u>Back</u></string>
+
+    <string name="explain_dl_lt_1">Your download connection is suitable for basic web browsing only. Streaming video content will be very slow.</string>
+    <string name="explain_dl_lt_3">Your download connection is suitable for basic web browsing only. Streaming video content will be slow.</string>
+    <string name="explain_dl_lt_5">Your download connection may struggle to keep up with video streaming of a higher quality than SD (480p).</string>
+    <string name="explain_dl_lt_25">Your download connection may struggle to keep up with video streaming of a higher quality than HD (1080p).</string>
+    <string name="explain_dl_lt_50">Your download connection will be able to handle one device streaming video in 4K.</string>
+    <string name="explain_dl_lt_100">Your download connection will be able to handle multiple devices streaming video in 4K.</string>
+    <string name="explain_dl_lt_500">Your download connection is very fast and will be abe to handle multiple devices streaming 8K video.</string>
+    <string name="explain_dl_lt_1000">Your download connection is very fast. Your connection will likely not cause any issues streaming any content.</string>
+
+    <string name="explain_ul_lt_1">Your upload connection is not suitable for even basic video calls.</string>
+    <string name="explain_ul_lt_3">Your upload connection is suitable for basic video calls.</string>
+    <string name="explain_ul_lt_5">Your upload connection is suitable for full HD video calls.</string>
+    <string name="explain_ul_lt_25">Your upload connection is suitable for stable, high quality video calls.</string>
+
+    <string name="explain_ping_low">Your ping is low. Your connection will likely not cause noticeable lag playing online games.</string>
+    <string name="explain_ping_high">Your ping is high. Your connection may cause noticeable lag playing online games, however a high ping may be caused by .</string>
 </resources>
